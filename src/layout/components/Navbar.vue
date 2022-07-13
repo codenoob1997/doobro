@@ -5,6 +5,9 @@
         </div>
         <div class="right-menu">
             <doodles class="right-menu-item hover-effect"/>
+            <doobros class="right-menu-item hover-effect"/>
+            <discord class="right-menu-item hover-effect"/>
+            <twitter class="right-menu-item hover-effect"/>
         </div>
     </div>
 </template>
@@ -12,6 +15,9 @@
 <script setup>
 import {} from 'vue'
 import Doodles from '@/components/Doodles'
+import Doobros from '@/components/Doobros'
+import discord from '@/components/discord'
+import twitter from '@/components/twitter'
 
 
 </script>
@@ -28,11 +34,9 @@ import Doodles from '@/components/Doodles'
     padding-right: 16px;
 
     ::v-deep .right-menu-item {
+      margin-top: 10px;
       display: inline-block;
-      padding: 0 18px 0 0;
-      font-size: 24px;
-      color: #5a5e66;
-      vertical-align: text-bottom;
+      align-items: center;
 
       &.hover-effect {
         cursor: pointer;
@@ -40,18 +44,6 @@ import Doodles from '@/components/Doodles'
 
         &:hover {
           background: rgba(0, 0, 0, 0.025);
-        }
-      }
-    }
-
-    ::v-deep .avatar-container {
-      cursor: pointer;
-      .avatar-wrapper {
-        margin-top: 5px;
-        position: relative;
-        .el-avatar {
-          --el-avatar-background-color: none;
-          margin-right: 12px;
         }
       }
     }

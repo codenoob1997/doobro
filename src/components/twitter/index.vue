@@ -2,7 +2,7 @@
   <el-dropdown
     trigger="click"
     class="international"
-    @command="handleDoodle"
+    @command="handleLink"
   >
     <div class="button">
           <div class="img">
@@ -11,10 +11,10 @@
     </div>
     <template #dropdown>
       <el-dropdown-menu>
-        <el-dropdown-item>
+        <el-dropdown-item command='official'>
           Doodles Official
         </el-dropdown-item>
-        <el-dropdown-item>
+        <el-dropdown-item command='doobros'>
           Doodles China Community 
         </el-dropdown-item>
       </el-dropdown-menu>
@@ -24,8 +24,12 @@
 
 <script setup>
 import {} from 'vue'
-const handleDoobros= function(){
-    alert("doobros")
+const handleLink= function(command){
+    if(command==='official'){
+      window.open("https://twitter.com/doodles")
+    }else if(command ==='doobros'){
+      window.open("https://twitter.com/doobroCN")
+    }
 }
 
 

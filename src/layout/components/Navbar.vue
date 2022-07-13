@@ -1,7 +1,7 @@
 <template>
     <div class="navbar">
         <div class="left-title">
-
+          <MainLogo class="left-item hover-effect"/>
         </div>
         <div class="right-menu">
             <doodles class="right-menu-item hover-effect"/>
@@ -15,15 +15,17 @@
 <script setup>
 import {} from 'vue'
 import Doodles from '@/components/Doodles'
-import Doobros from '@/components/Doobros'
+import doobros from '@/components/doobros'
 import discord from '@/components/discord'
 import twitter from '@/components/twitter'
+import MainLogo from '@/components/MainLogo'
 
 
 </script>
 
 <style lang="scss" scoped>
 .navbar{
+  overflow: hidden;
     height: 64px;
     background-color: rgba(85,71,173,0.6);
 }
@@ -47,6 +49,20 @@ import twitter from '@/components/twitter'
         }
       }
     }
+  }
+  .left-item{
+    float: left;
+    align-items: center;
+    margin-top: 10px;
+    padding-left:16px;
+     &.hover-effect {
+        cursor: pointer;
+        transition: background 0.3s;
+
+        &:hover {
+          background: rgba(0, 0, 0, 0.025);
+        }
+      }
   }
 
 </style>

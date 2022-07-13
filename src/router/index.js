@@ -17,6 +17,45 @@ const routes = [
       },
     ]
   },
+  {
+    path:'/doodles',
+    component:layout,
+    children:[
+        {
+          path:'/doodles/introduction',
+          name:'introduction',
+          component: () => import(/* webpackChunkName: "about" */ '../views/doodles/introduction.vue')
+        },
+        {
+          path:'/doodles/spacedoodle',
+          name:'spacedoodle',
+          component: () => import(/* webpackChunkName: "about" */ '../views/doodles/spacedoodle.vue')
+        },
+        {
+          path:'/doodles/doodles2',
+          name:'doodles2',
+          component: () => import(/* webpackChunkName: "about" */ '../views/doodles/doodles2.vue')
+        }
+
+    ]
+  },
+  {
+    path:'/doobros',
+    component:layout,
+    children:[
+        {
+          path:'/doobros/introduction',
+          name:'doobros-introduction',
+          component: () => import(/* webpackChunkName: "about" */ '../views/doobros/introduction.vue')
+        },
+        {
+          path:'/doobros/teaminfo',
+          name:'doobros-teaminfo',
+          component: () => import(/* webpackChunkName: "about" */ '../views/doobros/teamInfo.vue')
+        },
+    ]
+  }
+ 
   
 ]
 

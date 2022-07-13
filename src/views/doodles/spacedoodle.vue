@@ -1,6 +1,6 @@
 <template>
 <div class="main">
-    Hello this is main!
+    Space doodle
 </div>
 </template>
 

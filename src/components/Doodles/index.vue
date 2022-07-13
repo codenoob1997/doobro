@@ -9,13 +9,13 @@
     </div>
     <template #dropdown>
       <el-dropdown-menu>
-        <el-dropdown-item>
+        <el-dropdown-item command='introduction'>
           Introduction
-        </el-dropdown-item>
-        <el-dropdown-item>
+        </el-dropdown-item >
+        <el-dropdown-item command='spacedoodle'>
           SpaceDoodles
         </el-dropdown-item>
-        <el-dropdown-item>
+        <el-dropdown-item command='doodles2'>
           Doodles2
         </el-dropdown-item>
       </el-dropdown-menu>
@@ -25,8 +25,11 @@
 
 <script setup>
 import {} from 'vue'
-const handleDoodle= function(){
-    alert("doodles")
+import {useRouter} from 'vue-router'
+const router = useRouter()
+const handleDoodle= function(command){
+    const path = `/doodles/${command}`
+    router.push(path)
 }
 
 

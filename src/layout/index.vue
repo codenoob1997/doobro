@@ -12,6 +12,7 @@
 <script setup>
 import {} from 'vue'
 import Navbar from './components/Navbar'
+import AppMain from './components/AppMain'
 
 </script>
 
@@ -23,7 +24,6 @@ html,body{
     position:relative;
     height: 100%;
     width: 100%;
-    background-color: #A4A4F4;
 }
 .fixed-header{
     position: fixed;
@@ -31,5 +31,12 @@ html,body{
     right: 0;
     z-index: 9;
     width: 100%;
+}
+.main{
+    position: absolute;
+    width: 100%;
+    background-color: #A4A4F4;
+    height: calc(100% - 64px);
+    padding: 64px 0 0 0;
 }
 </style>

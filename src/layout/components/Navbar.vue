@@ -8,6 +8,7 @@
             <doobros class="right-menu-item hover-effect"/>
             <discord class="right-menu-item hover-effect"/>
             <twitter class="right-menu-item hover-effect"/>
+            <cart class="right-menu-item hover-effect"/>
         </div>
     </div>
 </template>
@@ -15,10 +16,11 @@
 <script setup>
 import {} from 'vue'
 import Doodles from '@/components/Doodles'
-import doobros from '@/components/doobros'
+import doobros from '@/components/Doobros'
 import discord from '@/components/discord'
 import twitter from '@/components/twitter'
 import MainLogo from '@/components/MainLogo'
+import Cart from '@/components/Cart'
 
 
 </script>

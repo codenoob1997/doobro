@@ -6,6 +6,7 @@
   >
     <div class="button">
           <div class="img">
+            <!-- <SvgIcon i/> -->
             doobros
           </div>
     </div>
@@ -25,6 +26,7 @@
 <script setup>
 import {} from 'vue'
 import {useRouter} from 'vue-router'
+import SvgIcon from '@/components/SvgIcon'
 const router = useRouter()
 const handleDoobros= function(command){
     const path = `/doobros/${command}`

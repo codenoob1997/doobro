@@ -5,9 +5,7 @@
     @command="handleLink"
   >
     <div class="button">
-          <div class="img">
-            discord
-          </div>
+      <SvgIcon icon="discord"/>
     </div>
     <template #dropdown>
       <el-dropdown-menu>
@@ -24,6 +22,7 @@
 
 <script setup>
 import {} from 'vue'
+import SvgIcon from '@/components/SvgIcon'
 const handleLink = function(command){
   if(command==='official'){
     window.open("https://discord.com/invite/doodles")

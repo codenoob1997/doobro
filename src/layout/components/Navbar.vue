@@ -9,6 +9,7 @@
             <discord class="right-menu-item hover-effect"/>
             <twitter class="right-menu-item hover-effect"/>
             <cart class="right-menu-item hover-effect"/>
+            <web3Connect class="right-menu-item hover-effect"></web3Connect>
         </div>
     </div>
 </template>
@@ -21,6 +22,7 @@ import discord from '@/components/discord'
 import twitter from '@/components/twitter'
 import MainLogo from '@/components/MainLogo'
 import Cart from '@/components/Cart'
+import web3Connect from '@/components/web3Connect'
 
 
 </script>

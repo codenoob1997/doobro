@@ -1,14 +1,8 @@
 import { createStore } from 'vuex'
+import web3 from './modules/web3'
 
 export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
+  modules:{
+    web3
   }
 })

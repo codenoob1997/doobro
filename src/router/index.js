@@ -15,6 +15,11 @@ const routes = [
         // which is lazy-loaded when the route is visited.
         component: () => import(/* webpackChunkName: "about" */ '../views/home/index.vue')
       },
+      {
+        path:'/mint',
+        name:'mintpage',
+        component: () => import(/* webpackChunkName: "about" */ '../views/mint/index.vue')
+      }
     ]
   },
   {
@@ -54,7 +59,8 @@ const routes = [
           component: () => import(/* webpackChunkName: "about" */ '../views/doobros/teamInfo.vue')
         },
     ]
-  }
+  },
+
  
   
 ]

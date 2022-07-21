@@ -17,11 +17,10 @@ export async function connectWallet() {
 
 }
 
-export async function mint(provider){
+export async function mint(addr){
+  const provider = await connectWallet()
   const signer = provider.getSigner()
-  const addr = "0xcF1328e5f0F78c173BEFfc16Cdd510cB2D790183" 
   const erc721 = new ethers.Contract(rinkebyContract,rinkebyABi,signer)
   const tx = await erc721.mint(addr)
   await tx.wait()
-  console.log("minted")
 }

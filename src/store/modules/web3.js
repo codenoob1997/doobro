@@ -1,13 +1,21 @@
 export default {
     namespaced:true,
     state:()=>({
-        provider :''
+        provider :'',
+        address:'',
+        chainId:null,
+        networkId:null,
     }),
     mutations:{
-        setProvider(state,provider){
-            state.provider = provider
-            // setItem(PROVIDER,provider)
-        }
+    setNetworkId(state,networkId){
+        state.networkId = networkId
+    },
+    setChainId(state,chainId){
+        state.chainId = chainId
+    },
+    setAddress(state,addr){
+        state.address = addr
+    }
 
     },
     actions:{

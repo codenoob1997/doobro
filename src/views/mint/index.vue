@@ -10,8 +10,7 @@ import {useStore} from 'vuex'
 import {mint} from '@/utils/connect'
 const store = useStore()
 const handleMint = function(){
-    let provider = toRaw(store.state.web3.provider)
-    mint(provider)
+    mint(store.getters.address)
 }
 
 

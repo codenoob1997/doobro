@@ -19,6 +19,11 @@ const routes = [
         path:'/mint',
         name:'mintpage',
         component: () => import(/* webpackChunkName: "about" */ '../views/mint/index.vue')
+      },
+      {
+        path:'/gallery',
+        name:'gallery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/gallery/index.vue')
       }
     ]
   },
